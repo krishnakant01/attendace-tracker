@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <a href="/">
+                    <div class="nav-title">
+                        <span class="nav-U-I blue-text">Attendance Tracker</span>
+                    </div>
+                    <div class="nav-tagline">Track your Attendance</div>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="button-container">
+        <button class="btn btn-contained-primary btn-div" id="btn-add-student">Add Student</button>
+        <button class="btn btn-contained-primary btn-div" id="btn-remove-student">Remove Student</button>
+        <button class="btn btn-contained-primary btn-div" id="btn-mark-attendance">Mark Attendance</button>
+    </div>
+
+    <div class="add-student-div">
+        <div>
+            <label class="form-label form-label-required-field">Name</label>
+            <input type="text" class="form-field" placeholder="Student Name" id="name" required>
+
+            <button class="btn btn-contained-primary btn-login" style="margin-top: 1rem;" type="submit"
+                id="add">Add</button>
+                <div class="add-msg">Student added form database.</div>
+        </div>
+    </div>
+
+    <div class="remove-student-div">
+        <div>
+            <label class="form-label form-label-required-field">Name</label>
+            <input type="text" class="form-field" placeholder="Student Name" id="name" required>
+
+            <button class="btn btn-contained-primary btn-login" style="margin-top: 1rem;" type="submit"
+                id="remove">Remove</button>
+
+                <div class="remove-msg">Student removed form database.</div>
+        </div>
+    </div>
+
+    <div class="mark-attendance-div">
+        <div>
+            <div class="one-field">
+                <label class="name-label">Krishnakant</label>
+                <input type="checkbox" class="name-input" id="name" required>
+            </div>
+            <div class="one-field">
+                <label class="name-label">Prem</label>
+                <input type="checkbox" class="name-input" id="name" required>
+            </div>
+            <div class="one-field">
+                <label class="name-label">Aditya</label>
+                <input type="checkbox" class="name-input" id="name" required>
+            </div>
+            <div class="one-field">
+                <label class="name-label">Tankit</label>
+                <input type="checkbox" class="name-input" id="name" required>
+            </div>
+
+            <button class="btn btn-contained-primary btn-login" style="margin-top: 1rem;" type="submit"
+                id="submit-atd">Submit</button>
+
+                <div class="atd-msg">Attendance marked.</div>
+                
+        </div>
+    </div>
+
+    <script src="divisionA.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"
+        integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
